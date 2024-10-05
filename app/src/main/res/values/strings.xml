@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="satellite_quality_title">Qualidade dos Satélites</string>
+</resources>
