@@ -10,13 +10,15 @@
         android:id="@+id/textviewLocation_id"
         android:layout_width="match_parent"
         android:layout_height="66dp"
-        android:text="Carregando..." />
+        android:text="Carregando..."
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textDisplacement_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Graus:" />
+        android:text="Graus:"
+        android:textColor="#FFFFFF" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,6 +29,7 @@
             android:layout_width="38dp"
             android:layout_height="19dp"
             android:text="Norte"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,6 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Oeste"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/compassArrow"
             app:layout_constraintTop_toTopOf="parent" />
@@ -62,6 +66,7 @@
             android:layout_width="43dp"
             android:layout_height="21dp"
             android:text="Leste"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/compassArrow"
             app:layout_constraintTop_toTopOf="parent"
@@ -77,12 +82,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sul"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     <com.example.myapplication.EsferaCelesteView
         android:id="@+id/esferacelesteview_id"
@@ -99,6 +104,7 @@
             android:layout_height="33dp"
             android:gravity="center"
             android:text="Legenda Constelações"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -168,12 +174,13 @@
     <TextView
         android:id="@+id/textSatelliteQuality_id"
         android:layout_width="match_parent"
-        android:layout_height="168dp"
-        android:text="Qualidade dos satelites:" />
+        android:layout_height="0dp"
+        android:text="Qualidade dos satelites:"
+        android:textColor="#FFFFFF" />
 
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/chartSNR"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="168dp"
         android:layout_marginTop="16dp" />
 </LinearLayout>

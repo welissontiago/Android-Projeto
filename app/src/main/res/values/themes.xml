@@ -1,9 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme for dark mode. -->
     <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+        <!-- Customize your dark theme here. -->
+        <!-- Exemplo de cor primária para o modo escuro -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
 
-    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+        <!-- Define o texto na cor branca -->
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
 </resources>

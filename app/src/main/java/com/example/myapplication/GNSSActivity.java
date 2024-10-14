@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -201,8 +202,15 @@ public class GNSSActivity extends AppCompatActivity implements SensorEventListen
         }
 
         BarDataSet dataSet = new BarDataSet(entries, "SNR dos Satélites");
+        dataSet.setValueTextColor(Color.WHITE);  // Cor branca para os valores do SNR
         BarData barData = new BarData(dataSet);
+
         chart.setData(barData);
+        chart.getXAxis().setTextColor(Color.WHITE); // Cor branca para os eixos
+        chart.getAxisLeft().setTextColor(Color.WHITE); // Cor branca para os valores da esquerda
+        chart.getAxisRight().setTextColor(Color.WHITE); // Cor branca para os valores da direita
+        chart.getLegend().setTextColor(Color.WHITE); // Cor branca para a legenda
+
         chart.invalidate(); // Redesenha o gráfico com os dados atualizados
     }
 
